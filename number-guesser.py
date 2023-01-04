@@ -18,15 +18,17 @@ else:
 
 
 r = (random.randrange(top_of_range) + 1)
-print(r)
+guesses = 0
 
 while True:
+    guesses += 1
     user_guess = input("Guess the random number: ")
     if user_guess.isdigit():
         user_guess = int(user_guess)
  
         if user_guess == r:
             print('You have won!')
+            print("Total guesses: ",guesses)
             quit()
         else:
             print('Guess again...')
