@@ -31,7 +31,10 @@ while True:
             print("Total guesses: ",guesses)
             quit()
         else:
-            print('Guess again...')
+            if user_guess > r:
+                print("You are above the number!")
+            else:
+                print("You are below the number!")
     else:
         print('Please type a number or a number that is positive next time.')
         continue
