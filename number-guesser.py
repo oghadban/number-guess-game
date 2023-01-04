@@ -30,11 +30,11 @@ while True:
             print('You have won!')
             print("Total guesses: ",guesses)
             quit()
+        elif user_guess > r:
+            print("You are above the number!")
         else:
-            if user_guess > r:
-                print("You are above the number!")
-            else:
-                print("You are below the number!")
+            print("You are below the number!")
+            
     else:
         print('Please type a number or a number that is positive next time.')
         continue
